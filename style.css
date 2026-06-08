@@ -248,14 +248,39 @@ img { max-width: 100%; display: block; }
 
 .card:hover .card-img-wrap img { transform: scale(1.04); }
 
-/* placeholder when image missing */
-.card-img-wrap.no-img {
+/* CSS gradient thumbnails */
+.card-thumb {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 3.5rem;
+  gap: 10px;
 }
-.card-img-wrap.no-img::after { content: '🖼'; }
+
+.thumb-platform {
+  background: linear-gradient(135deg, #0d2a1a 0%, #0a3d1f 40%, #14a800 100%);
+}
+.thumb-travel {
+  background: linear-gradient(135deg, #0d1a2a 0%, #0a2a4a 40%, #1f57c3 100%);
+}
+.thumb-news {
+  background: linear-gradient(135deg, #2a0d1a 0%, #3d0a1f 40%, #a8006e 100%);
+}
+
+.thumb-icon {
+  font-size: 2.8rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  transition: transform 0.3s ease;
+}
+.card:hover .thumb-icon { transform: scale(1.15); }
+
+.thumb-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
 .card-badge {
   position: absolute;
