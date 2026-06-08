@@ -415,6 +415,22 @@ img { max-width: 100%; display: block; }
   top: -60px; left: -60px; right: auto;
 }
 
+.showcase-teal { margin-top: 24px; }
+.showcase-teal::before {
+  background: radial-gradient(circle, rgba(0,188,188,0.15) 0%, transparent 70%);
+  top: -60px; right: -60px; left: auto;
+}
+
+.phone-placeholder-teal {
+  background: linear-gradient(160deg, #003a3a 0%, #00bcbc 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.phone-placeholder-teal::after {
+  content: 'PILOT IQ';
+  font-size: 0.75rem; font-weight: 800;
+  color: rgba(255,255,255,0.4); letter-spacing: 0.2em;
+}
+
 .demos-phones { order: -1; }
 
 .phone-placeholder-green {
