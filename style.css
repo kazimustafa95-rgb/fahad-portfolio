@@ -137,32 +137,6 @@ img { max-width: 100%; display: block; }
 
 .btn-lg { padding: 13px 28px; font-size: 1rem; }
 
-/* ── STATS BAR ── */
-.stats-bar {
-  background: var(--dark2);
-  border-bottom: 1px solid var(--border);
-  padding: 28px 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  text-align: center;
-}
-
-.stat { padding: 8px; }
-.stat-num {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--white);
-}
-.stat-label {
-  font-size: 0.8rem;
-  color: var(--text-m);
-  margin-top: 2px;
-}
 
 /* ── SECTIONS ── */
 .section { padding: 64px 0; }
