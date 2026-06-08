@@ -409,6 +409,28 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
 }
 
+.showcase-green { margin-top: 24px; }
+.showcase-green::before {
+  background: radial-gradient(circle, rgba(20,168,0,0.15) 0%, transparent 70%);
+  top: -60px; left: -60px; right: auto;
+}
+
+.demos-phones { order: -1; }
+
+.phone-placeholder-green {
+  background: linear-gradient(160deg, #0a2a0d 0%, #14a800 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-placeholder-green::after {
+  content: 'DEMOS';
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.2em;
+}
+
 .showcase-title {
   font-size: 1.6rem;
   font-weight: 700;
