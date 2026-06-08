@@ -50,161 +50,94 @@
     </div>
   </section>
 
-  <!-- ── FILTER TABS ── -->
+  <!-- ── PROJECTS ── -->
   <section class="section" id="projects">
     <div class="container">
       <h2 class="section-title">Featured Projects</h2>
       <div class="filter-tabs">
         <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="web">Web</button>
+        <button class="tab" data-filter="mobile">Mobile App</button>
         <button class="tab" data-filter="public">Public</button>
-        <button class="tab" data-filter="private">Private / Client</button>
-        <button class="tab" data-filter="ml">Machine Learning</button>
-        <button class="tab" data-filter="nlp">NLP</button>
-        <button class="tab" data-filter="cv">Computer Vision</button>
       </div>
 
       <!-- ── PROJECT CARDS ── -->
       <div class="projects-grid" id="projectsGrid">
 
-        <!-- CARD 1 -->
-        <article class="card" data-tags="ml public">
+        <!-- CARD 1 — Demo Platform -->
+        <article class="card" data-tags="web public">
           <div class="card-img-wrap">
-            <img src="assets/projects/proj1.jpg" alt="Sales Forecast ML" loading="lazy"
+            <img src="assets/projects/demo-platform.jpg" alt="Demo Platform" loading="lazy"
               onerror="this.parentElement.classList.add('no-img')" />
             <span class="card-badge public">Public</span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span class="card-tag">Machine Learning</span>
-              <span class="card-tag">Python</span>
+              <span class="card-tag">Laravel</span>
+              <span class="card-tag">PHP</span>
+              <span class="card-tag">Web App</span>
             </div>
-            <h3 class="card-title">Sales Forecast ML Pipeline</h3>
+            <h3 class="card-title">Demo Platform</h3>
             <p class="card-desc">
-              End-to-end forecasting pipeline using XGBoost and LSTM networks on 3 years
-              of retail data. Achieved 92% accuracy with automated retraining and a
-              Streamlit dashboard for stakeholders.
+              A full-featured web platform built with Laravel. Includes routing, authentication,
+              database migrations, and a clean UI — serving as a solid foundation for scalable
+              SaaS and enterprise web applications.
             </p>
             <div class="card-footer">
-              <a href="#" class="link-btn">View on GitHub ↗</a>
-              <a href="#" class="link-btn">Live Demo ↗</a>
+              <a href="https://github.com/kazimustafa95-rgb/demo-platform-" target="_blank" class="link-btn repo-link web-link">&#60;/&#62; Web Repo ↗</a>
+              <a href="#" class="link-btn repo-link app-link">&#128241; App Repo ↗</a>
             </div>
           </div>
         </article>
 
-        <!-- CARD 2 -->
-        <article class="card" data-tags="nlp private">
+        <!-- CARD 2 — Adam Travel -->
+        <article class="card" data-tags="web mobile public">
           <div class="card-img-wrap">
-            <img src="assets/projects/proj2.jpg" alt="Customer Support Chatbot" loading="lazy"
-              onerror="this.parentElement.classList.add('no-img')" />
-            <span class="card-badge private">Private</span>
-          </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="card-tag">NLP</span>
-              <span class="card-tag">LangChain</span>
-            </div>
-            <h3 class="card-title">AI Customer Support Chatbot</h3>
-            <p class="card-desc">
-              RAG-based chatbot built with LangChain + GPT-4 for a SaaS client. Reduced
-              support ticket volume by 60%. Integrated with Zendesk and deployed on AWS
-              Lambda.
-            </p>
-            <div class="card-footer">
-              <span class="private-note">&#128274; Client project — NDA</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 3 -->
-        <article class="card" data-tags="cv public">
-          <div class="card-img-wrap">
-            <img src="assets/projects/proj3.jpg" alt="Object Detection" loading="lazy"
+            <img src="assets/projects/adam-travel.jpg" alt="Adam Travel" loading="lazy"
               onerror="this.parentElement.classList.add('no-img')" />
             <span class="card-badge public">Public</span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span class="card-tag">Computer Vision</span>
-              <span class="card-tag">YOLOv8</span>
+              <span class="card-tag">Laravel</span>
+              <span class="card-tag">PHP</span>
+              <span class="card-tag">Travel</span>
             </div>
-            <h3 class="card-title">Real-Time Object Detection System</h3>
+            <h3 class="card-title">Adam Travel</h3>
             <p class="card-desc">
-              Custom-trained YOLOv8 model for industrial defect detection on a conveyor
-              belt. Processes 30 FPS on edge hardware (Jetson Nano) with 97% precision.
+              A travel management web application built with Laravel and Blade templating.
+              Designed for booking, itinerary management, and travel service listings —
+              delivering a seamless experience across web and mobile.
             </p>
             <div class="card-footer">
-              <a href="#" class="link-btn">View on GitHub ↗</a>
+              <a href="https://github.com/kazimustafa95-rgb/Adam-travel" target="_blank" class="link-btn repo-link web-link">&#60;/&#62; Web Repo ↗</a>
+              <a href="#" class="link-btn repo-link app-link">&#128241; App Repo ↗</a>
             </div>
           </div>
         </article>
 
-        <!-- CARD 4 -->
-        <article class="card" data-tags="nlp public">
+        <!-- CARD 3 — News Network -->
+        <article class="card" data-tags="web mobile public">
           <div class="card-img-wrap">
-            <img src="assets/projects/proj4.jpg" alt="Sentiment Analysis" loading="lazy"
+            <img src="assets/projects/news-network.jpg" alt="News Network" loading="lazy"
               onerror="this.parentElement.classList.add('no-img')" />
             <span class="card-badge public">Public</span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span class="card-tag">NLP</span>
-              <span class="card-tag">BERT</span>
+              <span class="card-tag">Laravel</span>
+              <span class="card-tag">CSS</span>
+              <span class="card-tag">News Portal</span>
             </div>
-            <h3 class="card-title">Multi-lingual Sentiment Analysis API</h3>
+            <h3 class="card-title">News Network</h3>
             <p class="card-desc">
-              Fine-tuned multilingual BERT for sentiment classification across 8 languages.
-              Deployed as a REST API with FastAPI, containerized with Docker and hosted on GCP.
+              A modern news portal built with Laravel and custom CSS. Features article
+              management, category filtering, and a responsive layout optimized for
+              fast content delivery across web and mobile devices.
             </p>
             <div class="card-footer">
-              <a href="#" class="link-btn">View on GitHub ↗</a>
-              <a href="#" class="link-btn">API Docs ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 5 -->
-        <article class="card" data-tags="ml private">
-          <div class="card-img-wrap">
-            <img src="assets/projects/proj5.jpg" alt="Churn Prediction" loading="lazy"
-              onerror="this.parentElement.classList.add('no-img')" />
-            <span class="card-badge private">Private</span>
-          </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="card-tag">Machine Learning</span>
-              <span class="card-tag">Tableau</span>
-            </div>
-            <h3 class="card-title">Customer Churn Prediction Dashboard</h3>
-            <p class="card-desc">
-              Ensemble model (Random Forest + Gradient Boosting) predicting churn with
-              89% recall. Integrated into Tableau dashboard used by a 500-seat sales team.
-            </p>
-            <div class="card-footer">
-              <span class="private-note">&#128274; Client project — NDA</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 6 -->
-        <article class="card" data-tags="cv ml public">
-          <div class="card-img-wrap">
-            <img src="assets/projects/proj6.jpg" alt="Medical Image Classifier" loading="lazy"
-              onerror="this.parentElement.classList.add('no-img')" />
-            <span class="card-badge public">Public</span>
-          </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="card-tag">Computer Vision</span>
-              <span class="card-tag">PyTorch</span>
-            </div>
-            <h3 class="card-title">Medical X-Ray Image Classifier</h3>
-            <p class="card-desc">
-              ResNet-50 classifier for pneumonia detection on chest X-rays. Achieved 94% AUC
-              on NIH ChestX-ray14 dataset. Full Grad-CAM explainability overlay included.
-            </p>
-            <div class="card-footer">
-              <a href="#" class="link-btn">View on GitHub ↗</a>
-              <a href="#" class="link-btn">Research Paper ↗</a>
+              <a href="https://github.com/kazimustafa95-rgb/News-Network" target="_blank" class="link-btn repo-link web-link">&#60;/&#62; Web Repo ↗</a>
+              <a href="#" class="link-btn repo-link app-link">&#128241; App Repo ↗</a>
             </div>
           </div>
         </article>

@@ -325,6 +325,31 @@ img { max-width: 100%; display: block; }
   color: var(--green);
 }
 
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.web-link {
+  background: rgba(20,168,0,0.1);
+  border: 1px solid rgba(20,168,0,0.3);
+  color: var(--green);
+}
+.web-link:hover { background: rgba(20,168,0,0.2); opacity: 1; }
+
+.app-link {
+  background: rgba(121,184,255,0.1);
+  border: 1px solid rgba(121,184,255,0.3);
+  color: #79b8ff;
+}
+.app-link:hover { background: rgba(121,184,255,0.2); opacity: 1; }
+
 .private-note {
   font-size: 0.82rem;
   color: var(--text-m);
