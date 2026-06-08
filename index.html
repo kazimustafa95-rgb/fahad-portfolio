@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Zahoor Shad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="avatar-wrap">
+        <img src="assets/avatar.jpg" alt="Zahoor Shad" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Zahoor+Shad&size=120&background=14a800&color=fff&bold=true'" />
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-name">Zahoor Shad</h1>
+        <p class="hero-title">Machine Learning Engineer &amp; Data Scientist</p>
+        <p class="hero-bio">
+          Turning raw data into real value. Specializing in ML pipelines, deep learning,
+          NLP, and data visualization — delivering clean, production‑ready solutions.
+        </p>
+        <div class="hero-badges">
+          <span class="badge badge-green">&#9733; Top Rated</span>
+          <span class="badge badge-blue">100% Job Success</span>
+          <span class="badge badge-gray">Available Now</span>
+        </div>
+        <div class="hero-actions">
+          <a href="https://www.upwork.com" target="_blank" class="btn btn-primary">Hire on Upwork</a>
+          <a href="mailto:zahoora.ahmed@hbox.digital" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── STATS ── -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projects Delivered</span></div>
+      <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Happy Clients</span></div>
+      <div class="stat"><span class="stat-num">5 yrs</span><span class="stat-label">Experience</span></div>
+      <div class="stat"><span class="stat-num">$0</span><span class="stat-label">Refund Rate</span></div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">TensorFlow / Keras</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">NLP / LLMs</span>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">Pandas / NumPy</span>
+        <span class="skill-tag">SQL / NoSQL</span>
+        <span class="skill-tag">FastAPI / Flask</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS / GCP</span>
+        <span class="skill-tag">Data Visualization</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">LangChain</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FILTER TABS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="filter-tabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="public">Public</button>
+        <button class="tab" data-filter="private">Private / Client</button>
+        <button class="tab" data-filter="ml">Machine Learning</button>
+        <button class="tab" data-filter="nlp">NLP</button>
+        <button class="tab" data-filter="cv">Computer Vision</button>
+      </div>
+
+      <!-- ── PROJECT CARDS ── -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- CARD 1 -->
+        <article class="card" data-tags="ml public">
+          <div class="card-img-wrap">
+            <img src="assets/projects/proj1.jpg" alt="Sales Forecast ML" loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')" />
+            <span class="card-badge public">Public</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">Machine Learning</span>
+              <span class="card-tag">Python</span>
+            </div>
+            <h3 class="card-title">Sales Forecast ML Pipeline</h3>
+            <p class="card-desc">
+              End-to-end forecasting pipeline using XGBoost and LSTM networks on 3 years
+              of retail data. Achieved 92% accuracy with automated retraining and a
+              Streamlit dashboard for stakeholders.
+            </p>
+            <div class="card-footer">
+              <a href="#" class="link-btn">View on GitHub ↗</a>
+              <a href="#" class="link-btn">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card" data-tags="nlp private">
+          <div class="card-img-wrap">
+            <img src="assets/projects/proj2.jpg" alt="Customer Support Chatbot" loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')" />
+            <span class="card-badge private">Private</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">NLP</span>
+              <span class="card-tag">LangChain</span>
+            </div>
+            <h3 class="card-title">AI Customer Support Chatbot</h3>
+            <p class="card-desc">
+              RAG-based chatbot built with LangChain + GPT-4 for a SaaS client. Reduced
+              support ticket volume by 60%. Integrated with Zendesk and deployed on AWS
+              Lambda.
+            </p>
+            <div class="card-footer">
+              <span class="private-note">&#128274; Client project — NDA</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card" data-tags="cv public">
+          <div class="card-img-wrap">
+            <img src="assets/projects/proj3.jpg" alt="Object Detection" loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')" />
+            <span class="card-badge public">Public</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">Computer Vision</span>
+              <span class="card-tag">YOLOv8</span>
+            </div>
+            <h3 class="card-title">Real-Time Object Detection System</h3>
+            <p class="card-desc">
+              Custom-trained YOLOv8 model for industrial defect detection on a conveyor
+              belt. Processes 30 FPS on edge hardware (Jetson Nano) with 97% precision.
+            </p>
+            <div class="card-footer">
+              <a href="#" class="link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="card" data-tags="nlp public">
+          <div class="card-img-wrap">
+            <img src="assets/projects/proj4.jpg" alt="Sentiment Analysis" loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')" />
+            <span class="card-badge public">Public</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">NLP</span>
+              <span class="card-tag">BERT</span>
+            </div>
+            <h3 class="card-title">Multi-lingual Sentiment Analysis API</h3>
+            <p class="card-desc">
+              Fine-tuned multilingual BERT for sentiment classification across 8 languages.
+              Deployed as a REST API with FastAPI, containerized with Docker and hosted on GCP.
+            </p>
+            <div class="card-footer">
+              <a href="#" class="link-btn">View on GitHub ↗</a>
+              <a href="#" class="link-btn">API Docs ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="card" data-tags="ml private">
+          <div class="card-img-wrap">
+            <img src="assets/projects/proj5.jpg" alt="Churn Prediction" loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')" />
+            <span class="card-badge private">Private</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">Machine Learning</span>
+              <span class="card-tag">Tableau</span>
+            </div>
+            <h3 class="card-title">Customer Churn Prediction Dashboard</h3>
+            <p class="card-desc">
+              Ensemble model (Random Forest + Gradient Boosting) predicting churn with
+              89% recall. Integrated into Tableau dashboard used by a 500-seat sales team.
+            </p>
+            <div class="card-footer">
+              <span class="private-note">&#128274; Client project — NDA</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 6 -->
+        <article class="card" data-tags="cv ml public">
+          <div class="card-img-wrap">
+            <img src="assets/projects/proj6.jpg" alt="Medical Image Classifier" loading="lazy"
+              onerror="this.parentElement.classList.add('no-img')" />
+            <span class="card-badge public">Public</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">Computer Vision</span>
+              <span class="card-tag">PyTorch</span>
+            </div>
+            <h3 class="card-title">Medical X-Ray Image Classifier</h3>
+            <p class="card-desc">
+              ResNet-50 classifier for pneumonia detection on chest X-rays. Achieved 94% AUC
+              on NIH ChestX-ray14 dataset. Full Grad-CAM explainability overlay included.
+            </p>
+            <div class="card-footer">
+              <a href="#" class="link-btn">View on GitHub ↗</a>
+              <a href="#" class="link-btn">Research Paper ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Client Testimonials</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p class="testimonial-text">"Zahoor delivered a production-ready ML pipeline in half the time we expected. Communication was excellent throughout. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <strong>Sarah M.</strong> — Founder, HealthTech Startup
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Deep understanding of NLP and LLMs. Built our chatbot from scratch, integrated it with our systems, and provided clean documentation. Will hire again."</p>
+          <div class="testimonial-author">
+            <strong>James K.</strong> — CTO, SaaS Platform
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Exceptional data scientist. Turned our messy data into actionable insights and a beautiful Streamlit dashboard. Our team loves it."</p>
+          <div class="testimonial-author">
+            <strong>Maria L.</strong> — Data Manager, E-Commerce Co.
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="container contact-box">
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="contact-sub">Available for freelance projects, consulting, and long-term contracts.</p>
+      <div class="contact-actions">
+        <a href="https://www.upwork.com" target="_blank" class="btn btn-primary btn-lg">View Upwork Profile</a>
+        <a href="mailto:zahoora.ahmed@hbox.digital" class="btn btn-outline btn-lg">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Zahoor Shad — All rights reserved.</span>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.upwork.com" target="_blank">Upwork</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
