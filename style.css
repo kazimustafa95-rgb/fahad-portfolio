@@ -381,7 +381,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* hidden by filter */
-.card.hidden {
+.card.hidden, .showcase-card.hidden {
   display: none;
 }
 

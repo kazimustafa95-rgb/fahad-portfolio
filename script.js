@@ -1,6 +1,6 @@
 // ── PROJECT FILTER ──
 const tabs = document.querySelectorAll('.tab');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card, .showcase-card');
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
