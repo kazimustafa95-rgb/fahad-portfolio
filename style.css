@@ -421,9 +421,14 @@ img { max-width: 100%; display: block; }
   border: 1px solid rgba(0,100,255,0.35);
 }
 
-.qb-promo-img {
-  border-radius: 12px;
-  filter: drop-shadow(0 8px 32px rgba(0,100,255,0.3));
+.phone-placeholder-cobalt {
+  background: linear-gradient(160deg, #0a1a3a 0%, #1f57c3 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.phone-placeholder-cobalt::after {
+  content: 'QB';
+  font-size: 0.75rem; font-weight: 800;
+  color: rgba(255,255,255,0.4); letter-spacing: 0.2em;
 }
 
 .showcase-purple { margin-top: 24px; }
