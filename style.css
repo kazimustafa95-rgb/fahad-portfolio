@@ -448,6 +448,28 @@ img { max-width: 100%; display: block; }
   z-index: 1;
 }
 
+.showcase-warm { margin-top: 24px; }
+.showcase-warm::before {
+  background: radial-gradient(circle, rgba(234,88,12,0.12) 0%, transparent 70%);
+  top: -60px; left: -60px; right: auto;
+}
+
+.badge-warm {
+  background: rgba(234,88,12,0.15);
+  color: #fb923c;
+  border: 1px solid rgba(234,88,12,0.35);
+}
+
+.phone-placeholder-warm {
+  background: linear-gradient(160deg, #1a0e0a 0%, #7c2d12 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.phone-placeholder-warm::after {
+  content: 'TIMELEFT';
+  font-size: 0.65rem; font-weight: 800;
+  color: rgba(255,255,255,0.4); letter-spacing: 0.15em;
+}
+
 .showcase-ocean { margin-top: 24px; }
 .showcase-ocean::before {
   background: radial-gradient(circle, rgba(14,116,144,0.18) 0%, transparent 70%);
